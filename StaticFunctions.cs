@@ -18,7 +18,39 @@ class StaticFunctions
     to 1, less than 1000 and formatted with 2 fixed digits after the decimal point, e.g. 
     1.30kB.*/
     {
-        /*IMPLEMENT HERE*/   
+        if(byteSize >= 1) //Checks that the byte size is non-negative
+        {
+            if(byteSize >= 1000)
+            {
+                double convertedByte = (double)byteSize / 1000; /*Converts long to a double so that 
+                decimal place can be used. FIX THIS LATER SO THAT MAX VALUE CAN BE TESTED*/
+                if(convertedByte >= 1000)
+                {
+                    convertedByte /= 1000;
+                    if(convertedByte >= 1000)
+                    {
+                        convertedByte /= 1000;
+                        if(convertedByte >= 1000)
+                        {
+                            convertedByte /= 1000;
+                            if(convertedByte >= 1000)
+                            {
+                                convertedByte /= 1000;
+                                if(convertedByte >= 1000)
+                                {
+                                    convertedByte /= 1000;
+                                    if(convertedByte >= 1000)
+                                    {
+                                    convertedByte /= 1000;
+                                    return (String.Format("{0:0.00}", convertedByte) + "zB");
+                                    } else {return String.Format("{0:0.00}", convertedByte) + "EB";}
+                                } else {return String.Format("{0:0.00}", convertedByte) + "PB";}
+                            } else {return String.Format("{0:0.00}", convertedByte) + "TB";}
+                        } else {return String.Format("{0:0.00}", convertedByte) + "GB";}
+                    } else {return String.Format("{0:0.00}", convertedByte) + "MB";}
+                } else {return String.Format("{0:0.00}", convertedByte) + "kB";}
+            } else {return String.Format("{0:0.00}", byteSize) + "B";}
+        }  return null; //value is a negative byte size
     }
 
     static XDocument CreateReport(IEnumerable<string> files)

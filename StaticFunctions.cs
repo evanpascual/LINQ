@@ -71,6 +71,10 @@ class StaticFunctions
     second the path of the HTML report output file. Call the functions above to create the 
     report file.*/
     {
-        /*IMPLEMENT HERE*/
+        Console.WriteLine("Enter path of the input folder: ");
+        string input = Console.ReadLine();
+        Console.WriteLine ("Enter path of the HTML report output file: ");
+        string output = Console.ReadLine();
+        /* IMPLEMENT MAIN METHOD HERE*/
     }
 }

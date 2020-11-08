@@ -1,7 +1,7 @@
-## LINQ
+# LINQ
 Using C# and LINQ to iterate files, to query, group and order data, and to create an XML document based on that data
 
-# Assignment Description
+## Assignment Description
 1. Create a C# console application.
 This application has two command line arguments: A path to a folder and a name for a
 HTML report output file. The application collects all files with the same extension (converted

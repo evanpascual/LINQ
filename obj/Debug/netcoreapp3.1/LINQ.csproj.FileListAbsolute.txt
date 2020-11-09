@@ -1,0 +1,12 @@
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.csprojAssemblyReference.cache
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.AssemblyInfoInputs.cache
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.AssemblyInfo.cs
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.csproj.CoreCompileInputs.cache
+/Users/evanpascual/Code/LINQ/bin/Debug/netcoreapp3.1/LINQ.deps.json
+/Users/evanpascual/Code/LINQ/bin/Debug/netcoreapp3.1/LINQ.runtimeconfig.json
+/Users/evanpascual/Code/LINQ/bin/Debug/netcoreapp3.1/LINQ.runtimeconfig.dev.json
+/Users/evanpascual/Code/LINQ/bin/Debug/netcoreapp3.1/LINQ.dll
+/Users/evanpascual/Code/LINQ/bin/Debug/netcoreapp3.1/LINQ.pdb
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.dll
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.pdb
+/Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.genruntimeconfig.cache

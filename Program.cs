@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace LINQ
 {
@@ -77,10 +78,45 @@ namespace LINQ
         // to format the value printed in the “Size” column. Implement this function using LINQ 
         // queries making use of group by and orderby. Use the System.Xml.Linq.XElement constructor 
         // to functionally construct the XML document*/
-        // static XDocument CreateReport(IEnumerable<string> files)
-        // {
-        //     /*IMPLEMENT HERE*/
-        // }
+        private static XDocument CreateReport(IEnumerable<string> files){  
+        //    var  query = from file in files
+        //    group file by Path.GetExtension(file).ToLower() into g
+        //    let totalSize = g.Sum(file => new FileInfo(file).Length)
+        //    orderby totalSize descending
+        //    select new{
+        //        Type = g.Key,
+        //        Count = g.Count(),
+        //        Size = FormatByteSize(totalSize)
+               
+        //    };
+           
+            XDocument doc = new XDocument(
+                new XElement("html", 
+                    new XElement("head",
+                        new XElement("title","Data File")),
+                new XElement("body",
+                    new XElement("table", new XAttribute("boder", "1"),
+                        new XElement("thread",
+                            new XElement("tr",
+                                new XElement("th","Type"),
+                                new XElement("th","Count"),
+                                new XElement("th","Size"))),
+                        new XElement("tbody",
+                            from file in files
+                           //linq query would go here
+                            
+                            // select new XElement("tr",
+                            //       new XElement("td",something.type),
+                            //         new XElement("td",something.Count()),
+                            //         new XElement("td",FormatByteSize(totalSize))))))));
+                            
+                           
+        //reference: https://www.c-sharpcorner.com/blogs/convert-an-xml-into-html-table-using-linqtoxml1
+        //to build table
+
+        return doc;
+            
+        }
 
 
         /* Takes two command line arguments: The first value is the path of the input folder and the 

@@ -79,17 +79,7 @@ namespace LINQ
         // queries making use of group by and orderby. Use the System.Xml.Linq.XElement constructor 
         // to functionally construct the XML document*/
         private static XDocument CreateReport(IEnumerable<string> files){  
-        //    var  query = from file in files
-        //    group file by Path.GetExtension(file).ToLower() into g
-        //    let totalSize = g.Sum(file => new FileInfo(file).Length)
-        //    orderby totalSize descending
-        //    select new{
-        //        Type = g.Key,
-        //        Count = g.Count(),
-        //        Size = FormatByteSize(totalSize)
-               
-        //    };
-           
+        
             XDocument doc = new XDocument(
                 new XElement("html", 
                     new XElement("head",

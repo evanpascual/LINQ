@@ -8,25 +8,25 @@ namespace LINQ
 {
     class Program
     {
-        // /*Enumerate all files in a given folder recursively including the entire sub-folder 
-        // hierarchy. You can use System.IO.Directory. You could use the generator pattern (yield 
-        // keyword) to implement the iterator*/
-        // static IEnumerable<string> EnumerateFilesRecursively(string path)
-        // {
-        //     IEnumerable<string> files;
-        //     try 
-        //     {
-        //         files =
-        //             from file in Directory.EnumerateFiles(path)
-        //             select file;
-        //         Console.WriteLine("Found: " + files.Count());
-        //     }
-        //     catch (FileNotFoundException) 
-        //     {
-        //         Console.WriteLine("Not a valid path.");
-        //         return files;
-        //     }
-        // }
+        /*Enumerate all files in a given folder recursively including the entire sub-folder 
+        hierarchy. You can use System.IO.Directory. You could use the generator pattern (yield 
+        keyword) to implement the iterator*/
+        static IEnumerable<string> EnumerateFilesRecursively(string path) {
+
+            // checks every file in folder
+            foreach (var file in Directory.GetFiles(path))
+            {
+                yield return file;                
+            }
+
+            // checks every folder within the directory
+            foreach (var folder in Directory.GetDirectories(path))
+            {
+                // recursively call functions to check number of folders in each subfolder
+                foreach(var file in EnumerateFilesRecursively(folder))
+                    yield return file;
+            }
+        }
 
 
         /* Formats an inputted byte size into a simplified unit(B, kB, MB, GB, TB, PB, EB, 
@@ -93,7 +93,11 @@ namespace LINQ
                                 new XElement("th","Size"))),
                         new XElement("tbody",
                             from file in files
+
                            //linq query would go here
+
+                            select new XElement("tr",               //placeholder so that there are no errors that show up when building :)
+                                  new XElement("td",file)))))));    //we'll delete this later so that the file can run 
                             
                             // select new XElement("tr",
                             //       new XElement("td",something.type),
@@ -116,7 +120,7 @@ namespace LINQ
             Console.WriteLine("Enter path of the input folder: ");
             string input;
             input = Console.ReadLine();
-            //EnumerateFilesRecursively(input);
+            var file = EnumerateFilesRecursively(input);
             //Console.WriteLine ("Enter path of the HTML report output file: ");
             //string output = Console.ReadLine();
         }

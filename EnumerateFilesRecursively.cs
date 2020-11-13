@@ -4,6 +4,7 @@ of EnumerateFilesRecursively function
 using System;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
 
 // code found on StackOverflow from 2013, will look more into this
 // slightly modified
@@ -33,7 +34,11 @@ namespace ConsoleApp {
         static void Main(string[] args) {
 
             var line = EnumerateFilesRecursively(args[0]);
-            Console.WriteLine({f.Line});
+            Console.WriteLine(line);
         }
     }
 }
+
+// I placed this EnumerateFilesRecursively function in the Program.cs file with its friends :)
+// I left this file here doe so you know I didnt just up and delete your work
+// -Evan

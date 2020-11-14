@@ -93,22 +93,18 @@ namespace LINQ
                                 new XElement("th","Size"))),
                         new XElement("tbody",
                             from file in files
-
-                           //linq query would go here
-
-                            select new XElement("tr",               //placeholder so that there are no errors that show up when building :)
-                                  new XElement("td",file)))))));    //we'll delete this later so that the file can run 
-                            
-                            // select new XElement("tr",
-                            //       new XElement("td",something.type),
-                            //         new XElement("td",something.Count()),
-                            //         new XElement("td",FormatByteSize(totalSize))))))));
-                            
-                           
-        //reference: https://www.c-sharpcorner.com/blogs/convert-an-xml-into-html-table-using-linqtoxml1
-        //to build table
-
-        return doc;
+                                group file by Path.GetExtension(file).ToLower() into typeGroup
+                                let totalSize = typeGroup.Sum(file => new FileInfo(file).Length)
+                                orderby totalSize descending
+                                select new XElement("tr",
+                                    new XElement("td",typeGroup.Key),
+                                    new XElement("td",typeGroup.Count()),
+                                    new XElement("td",FormatByteSize(totalSize))))))));
+                          
+             return doc;
+        
+        //reference for table creation: https://www.c-sharpcorner.com/blogs/convert-an-xml-into-html-table-using-linqtoxml1
+        //for getting length of file using FileInfo : https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-5.0 
             
         }
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\knmar\\Desktop\\school\\fall2020\\cecs342\\LINQ\\LINQ.csproj": {}
+    "/Users/evanpascual/Code/LINQ/LINQ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\knmar\\Desktop\\school\\fall2020\\cecs342\\LINQ\\LINQ.csproj": {
+    "/Users/evanpascual/Code/LINQ/LINQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\knmar\\Desktop\\school\\fall2020\\cecs342\\LINQ\\LINQ.csproj",
+        "projectUniqueName": "/Users/evanpascual/Code/LINQ/LINQ.csproj",
         "projectName": "LINQ",
-        "projectPath": "C:\\Users\\knmar\\Desktop\\school\\fall2020\\cecs342\\LINQ\\LINQ.csproj",
-        "packagesPath": "C:\\Users\\knmar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\knmar\\Desktop\\school\\fall2020\\cecs342\\LINQ\\obj\\",
+        "projectPath": "/Users/evanpascual/Code/LINQ/LINQ.csproj",
+        "packagesPath": "/Users/evanpascual/.nuget/packages/",
+        "outputPath": "/Users/evanpascual/Code/LINQ/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\knmar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/evanpascual/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     }

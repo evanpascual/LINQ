@@ -116,9 +116,13 @@ namespace LINQ
             Console.WriteLine("Enter path of the input folder: ");
             string input;
             input = Console.ReadLine();
-            var file = EnumerateFilesRecursively(input);
-            //Console.WriteLine ("Enter path of the HTML report output file: ");
-            //string output = Console.ReadLine();
+
+            IEnumerable<string> files = EnumerateFilesRecursively(input);
+            
+            XDocument report = CreateReport(files);
+            Console.WriteLine("Enter path of the output file:");
+            string output = Console.ReadLine();;
+            report.Save(output);
         }
     }
 }

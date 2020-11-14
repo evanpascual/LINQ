@@ -10,9 +10,9 @@
 /Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.dll
 /Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.pdb
 /Users/evanpascual/Code/LINQ/obj/Debug/netcoreapp3.1/LINQ.genruntimeconfig.cache
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.csprojAssemblyReference.cache
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.AssemblyInfoInputs.cache
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.AssemblyInfo.cs
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.csproj.CoreCompileInputs.cache
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.dll
-C:\Users\knmar\Desktop\school\fall2020\cecs342\LINQ\obj\Debug\netcoreapp3.1\LINQ.pdb
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.csprojAssemblyReference.cache
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.AssemblyInfoInputs.cache
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.AssemblyInfo.cs
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.csproj.CoreCompileInputs.cache
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.dll
+C:/Users/knmar/Desktop/school/fall2020/cecs342/LINQ/obj/Debug/netcoreapp3.1/LINQ.pdb

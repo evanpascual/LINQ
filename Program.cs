@@ -121,7 +121,8 @@ namespace LINQ
             
             XDocument report = CreateReport(files);
             Console.WriteLine("Enter path of the output file:");
-            string output = Console.ReadLine();;
+            string output = Console.ReadLine();
+            output = output + ".html";
             report.Save(output);
         }
     }

@@ -39,7 +39,7 @@ namespace LINQ
                 if(byteSize >= 1000)
                 {
                     double convertedByte = (double)byteSize / 1000; /*Converts long to a double so that 
-                    decimal place can be used. FIX THIS LATER SO THAT MAX VALUE CAN BE TESTED*/
+                    decimal place can be used.*/
                     if(convertedByte >= 1000)
                     {
                         convertedByte /= 1000;
@@ -113,16 +113,21 @@ namespace LINQ
         second the path of the HTML report output file.*/
         public static void Main(string[] args)
         {
+            //takes user input on what folder path to check
             Console.WriteLine("Enter path of the input folder: ");
             string input;
             input = Console.ReadLine();
 
+            //calls for the files to be enumerated
             IEnumerable<string> files = EnumerateFilesRecursively(input);
             
+            //creates output file
             XDocument report = CreateReport(files);
+
+            //takes user input on where the output file should be place + the name of it
             Console.WriteLine("Enter path of the output file:");
             string output = Console.ReadLine();
-            output = output + ".html";
+            output = output + ".html"; //changes the user input to make it an .html extension
             report.Save(output);
         }
     }
